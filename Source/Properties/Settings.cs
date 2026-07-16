@@ -1,4 +1,4 @@
-﻿using ModSettings;
+using ModSettings;
 
 using UniversalTweaks.Utilities;
 
@@ -290,16 +290,6 @@ internal class Settings : JsonModSettings
     [Description("Gives all the containers a semi-infinite weight value.")]
     public bool InfiniteContainerWeight = false;
 
-    [Name("Backpack")]
-    [Description("Adjust how much weight Backpack can hold. Default is 15 KG.")]
-    [Slider(0f, 30f, 31, NumberFormat = "{0:0.##} KG")]
-    public float ContainerBackpackCapacity = 15;
-
-    [Name("Briefcase")]
-    [Description("Adjust how much weight Briefcase can hold. Default is 10 KG.")]
-    [Slider(0f, 30f, 31, NumberFormat = "{0:0.##} KG")]
-    public float ContainerBriefcaseCapacity = 10;
-
     [Name("Cabinet (Small)")]
     [Description("Adjust how much weight Cabinet (Small) can hold. Default is 20 KG.")]
     [Slider(0f, 50f, 51, NumberFormat = "{0:0.##} KG")]
@@ -309,26 +299,6 @@ internal class Settings : JsonModSettings
     [Description("Adjust how much weight Cabinet (Large) can hold. Default is 40 KG.")]
     [Slider(0f, 200f, 201, NumberFormat = "{0:0.##} KG")]
     public float ContainerCabinetLgeCapacity = 40;
-
-    [Name("Cargo Container")]
-    [Description("Adjust how much weight Cargo Container can hold. Default is 30 KG.")]
-    [Slider(0f, 250f, 251, NumberFormat = "{0:0.##} KG")]
-    public float ContainerCargoContainerCapacity = 30;
-
-    [Name("Cash Register")]
-    [Description("Adjust how much weight Cash Register can hold. Default is 5 KG.")]
-    [Slider(0f, 25f, 26, NumberFormat = "{0:0.##} KG")]
-    public float ContainerCashRegisterCapacity = 5;
-
-    [Name("Coal Bin")]
-    [Description("Adjust how much weight Coal Bin can hold. Default is 60 KG.")]
-    [Slider(0f, 250f, 251, NumberFormat = "{0:0.##} KG")]
-    public float ContainerCoalBinCapacity = 60;
-
-    [Name("Cooler")]
-    [Description("Adjust how much weight Cooler can hold. Default is 20 KG.")]
-    [Slider(0f, 150f, 151, NumberFormat = "{0:0.##} KG")]
-    public float ContainerCoolerCapacity = 20;
 
     [Name("Cupboard")]
     [Description("Adjust how much weight Cupboard can hold. Default is 15 KG.")]
@@ -340,65 +310,10 @@ internal class Settings : JsonModSettings
     [Slider(0f, 50f, 51, NumberFormat = "{0:0.##} KG")]
     public float ContainerDresserDrawerCapacity = 5;
 
-    [Name("Dryer")]
-    [Description("Adjust how much weight Dryer can hold. Default is 30 KG.")]
-    [Slider(0f, 500f, 501, NumberFormat = "{0:0.##} KG")]
-    public float ContainerDryerCapacity = 30;
-
-    [Name("File Cabinet")]
-    [Description("Adjust how much weight File Cabinet can hold. Default is 10 KG.")]
+    [Name("Side Table Drawer")]
+    [Description("Adjust how much weight Side Table Drawer can hold. Default is 5 KG.")]
     [Slider(0f, 50f, 51, NumberFormat = "{0:0.##} KG")]
-    public float ContainerFileCabinetCapacity = 10;
-
-    [Name("First Aid Kit")]
-    [Description("Adjust how much weight First Aid Kit can hold. Default is 5 KG.")]
-    [Slider(0f, 25f, 26, NumberFormat = "{0:0.##} KG")]
-    public float ContainerFirstAidCapacity = 5;
-
-    [Name("Firewood Bin")]
-    [Description("Adjust how much weight Firewood Bin can hold. Default is 30 KG.")]
-    [Slider(0f, 500f, 501, NumberFormat = "{0:0.##} KG")]
-    public float ContainerFirewoodBinCapacity = 30;
-
-    [Name("Fishing Hut Drawer")]
-    [Description("Adjust how much weight Fishing Hut Drawer can hold. Default is 10 KG.")]
-    [Slider(0f, 50f, 51, NumberFormat = "{0:0.##} KG")]
-    public float ContainerFishingHutDrawerCapacity = 10;
-
-    [Name("Freezer")]
-    [Description("Adjust how much weight Freezer can hold. Default is 20 KG.")]
-    [Slider(0f, 100f, 101, NumberFormat = "{0:0.##} KG")]
-    public float ContainerFreezerCapacity = 20;
-
-    [Name("Fridge")]
-    [Description("Adjust how much weight Fridge can hold. Default is 40 KG.")]
-    [Slider(0f, 200f, 201, NumberFormat = "{0:0.##} KG")]
-    public float ContainerFridgeCapacity = 40;
-
-    [Name("Glove Box")]
-    [Description("Adjust how much weight Glove Box can hold. Default is 5 KG.")]
-    [Slider(0f, 25f, 26, NumberFormat = "{0:0.##} KG")]
-    public float ContainerGloveBoxCapacity = 5;
-
-    [Name("Gun Locker")]
-    [Description("Adjust how much weight Gun Locker can hold. Default is 30 KG.")]
-    [Slider(0f, 100f, 101, NumberFormat = "{0:0.##} KG")]
-    public float ContainerGunLockerCapacity = 30;
-
-    [Name("Hatch")]
-    [Description("Adjust how much weight Hatch can hold. Default is 40 KG.")]
-    [Slider(0f, 250f, 251, NumberFormat = "{0:0.##} KG")]
-    public float ContainerHatchCapacity = 40;
-
-    [Name("Hidden Cache")]
-    [Description("Adjust how much weight Hidden Cache can hold. Default is 15 KG.")]
-    [Slider(0f, 50f, 51, NumberFormat = "{0:0.##} KG")]
-    public float ContainerHiddenCacheCapacity = 15;
-
-    [Name("Infirmary Drawer")]
-    [Description("Adjust how much weight Infirmary Drawer can hold. Default is 10 KG.")]
-    [Slider(0f, 50f, 51, NumberFormat = "{0:0.##} KG")]
-    public float ContainerInfirmaryDrawerCapacity = 10;
+    public float ContainerEndTableDrawerCapacity = 5;
 
     [Name("Kitchen Cabinet")]
     [Description("Adjust how much weight Kitchen Cabinet can hold. Default is 15 KG.")]
@@ -410,21 +325,6 @@ internal class Settings : JsonModSettings
     [Slider(0f, 50f, 51, NumberFormat = "{0:0.##} KG")]
     public float ContainerKitchenDrawerCapacity = 10;
 
-    [Name("Lock Box")]
-    [Description("Adjust how much weight Lock Box can hold. Default is 10 KG.")]
-    [Slider(0f, 50f, 51, NumberFormat = "{0:0.##} KG")]
-    public float ContainerLockBoxCapacity = 10;
-
-    [Name("Locker")]
-    [Description("Adjust how much weight Locker can hold. Default is 30 KG.")]
-    [Slider(0f, 100f, 101, NumberFormat = "{0:0.##} KG")]
-    public float ContainerLockerCapacity = 30;
-
-    [Name("Medicine Shelf")]
-    [Description("Adjust how much weight Medicine Shelf can hold. Default is 5 KG.")]
-    [Slider(0f, 25f, 26, NumberFormat = "{0:0.##} KG")]
-    public float ContainerMedicineShelfCapacity = 5;
-
     [Name("Metal Desk Drawer (Small)")]
     [Description("Adjust how much weight Metal Desk Drawer (Small) can hold. Default is 5 KG.")]
     [Slider(0f, 25f, 26, NumberFormat = "{0:0.##} KG")]
@@ -435,50 +335,15 @@ internal class Settings : JsonModSettings
     [Slider(0f, 50f, 51, NumberFormat = "{0:0.##} KG")]
     public float ContainerDeskDrawerLgeCapacity = 10;
 
-    [Name("Metal Container")]
-    [Description("Adjust how much weight Metal Container can hold. Default is 15 KG.")]
+    [Name("Wood Desk Drawer")]
+    [Description("Adjust how much weight Wood Desk Drawer can hold. Default is 5 KG.")]
     [Slider(0f, 50f, 51, NumberFormat = "{0:0.##} KG")]
-    public float ContainerMetalContainerCapacity = 15;
+    public float ContainerWoodDeskDrawerCapacity = 5;
 
-    [Name("Oven")]
-    [Description("Adjust how much weight Oven can hold. Default is 40 KG.")]
-    [Slider(0f, 100f, 101, NumberFormat = "{0:0.##} KG")]
-    public float ContainerOvenCapacity = 40;
-
-    [Name("Plastic Container")]
-    [Description("Adjust how much weight Plastic Container can hold. Default is 15 KG.")]
-    [Slider(0f, 30f, 31, NumberFormat = "{0:0.##} KG")]
-    public float ContainerPlasticContainerCapacity = 15;
-
-    [Name("Rock Cache")]
-    [Description("Adjust how much weight Rock Cache can hold. Default is 30 KG.")]
-    [Slider(0f, 100f, 101, NumberFormat = "{0:0.##} KG")]
-    public float ContainerRockCacheCapacity = 30;
-
-    [Name("Safe")]
-    [Description("Adjust how much weight Safe can hold. Default is 10 KG.")]
+    [Name("Warden Desk Drawer")]
+    [Description("Adjust how much weight Warden Desk Drawer can hold. Default is 10 KG.")]
     [Slider(0f, 50f, 51, NumberFormat = "{0:0.##} KG")]
-    public float ContainerSafeCapacity = 10;
-
-    [Name("Safety Deposit Box")]
-    [Description("Adjust how much weight Safety Deposit Box can hold. Default is 5 KG.")]
-    [Slider(0f, 25f, 26, NumberFormat = "{0:0.##} KG")]
-    public float ContainerSafetyDepositBoxCapacity = 5;
-
-    [Name("Side Table Drawer")]
-    [Description("Adjust how much weight Side Table Drawer can hold. Default is 5 KG.")]
-    [Slider(0f, 50f, 51, NumberFormat = "{0:0.##} KG")]
-    public float ContainerEndTableDrawerCapacity = 5;
-
-    [Name("Supply Bin")]
-    [Description("Adjust how much weight Supply Bin can hold. Default is 30 KG.")]
-    [Slider(0f, 250f, 251, NumberFormat = "{0:0.##} KG")]
-    public float ContainerSupplyBinCapacity = 30;
-
-    [Name("Suitcase")]
-    [Description("Adjust how much weight Suitcase can hold. Default is 20 KG.")]
-    [Slider(0f, 50f, 51, NumberFormat = "{0:0.##} KG")]
-    public float ContainerSuitcaseCapacity = 20;
+    public float ContainerWardenDeskDrawerCapacity = 10;
 
     [Name("Tool Cabinet Drawer (Small)")]
     [Description("Adjust how much weight Tool Cabinet Drawer (Small) can hold. Default is 5 KG.")]
@@ -490,40 +355,238 @@ internal class Settings : JsonModSettings
     [Slider(0f, 100f, 51, NumberFormat = "{0:0.##} KG")]
     public float ContainerToolCabinetDrawerLgeCapacity = 10;
 
-    [Name("Trash Can")]
-    [Description("Adjust how much weight Trash Can can hold. Default is 15 KG.")]
-    [Slider(0f, 500f, 501, NumberFormat = "{0:0.##} KG")]
-    public float ContainerTrashCanCapacity = 15;
+    [Name("File Cabinet")]
+    [Description("Adjust how much weight File Cabinet can hold. Default is 10 KG.")]
+    [Slider(0f, 50f, 51, NumberFormat = "{0:0.##} KG")]
+    public float ContainerFileCabinetCapacity = 10;
 
-    [Name("Trunk (Car)")]
-    [Description("Adjust how much weight Trunk (Car) can hold. Default is 40 KG.")]
-    [Slider(0f, 500f, 501, NumberFormat = "{0:0.##} KG")]
-    public float ContainerCarTrunkCapacity = 40;
+    [Name("Fishing Hut Drawer")]
+    [Description("Adjust how much weight Fishing Hut Drawer can hold. Default is 10 KG.")]
+    [Slider(0f, 50f, 51, NumberFormat = "{0:0.##} KG")]
+    public float ContainerFishingHutDrawerCapacity = 10;
 
     [Name("Trunk (Wooden Box)")]
     [Description("Adjust how much weight Trunk (Wooden Box) can hold. Default is 40 KG.")]
     [Slider(0f, 500f, 501, NumberFormat = "{0:0.##} KG")]
     public float ContainerTrunkCapacity = 40;
 
-    [Name("Warden Desk Drawer")]
-    [Description("Adjust how much weight Warden Desk Drawer can hold. Default is 10 KG.")]
-    [Slider(0f, 50f, 51, NumberFormat = "{0:0.##} KG")]
-    public float ContainerWardenDeskDrawerCapacity = 10;
+    [Name("Trash Can")]
+    [Description("Adjust how much weight Trash Can can hold. Default is 15 KG.")]
+    [Slider(0f, 500f, 501, NumberFormat = "{0:0.##} KG")]
+    public float ContainerTrashCanCapacity = 15;
+
+    [Name("Freezer")]
+    [Description("Adjust how much weight Freezer can hold. Default is 20 KG.")]
+    [Slider(0f, 100f, 101, NumberFormat = "{0:0.##} KG")]
+    public float ContainerFreezerCapacity = 20;
+
+    [Name("Fridge")]
+    [Description("Adjust how much weight Fridge can hold. Default is 40 KG.")]
+    [Slider(0f, 200f, 201, NumberFormat = "{0:0.##} KG")]
+    public float ContainerFridgeCapacity = 40;
+
+    [Name("Cooler")]
+    [Description("Adjust how much weight Cooler can hold. Default is 20 KG.")]
+    [Slider(0f, 150f, 151, NumberFormat = "{0:0.##} KG")]
+    public float ContainerCoolerCapacity = 20;
+
+    [Name("Oven")]
+    [Description("Adjust how much weight Oven can hold. Default is 40 KG.")]
+    [Slider(0f, 100f, 101, NumberFormat = "{0:0.##} KG")]
+    public float ContainerOvenCapacity = 40;
+
+    [Name("Dryer")]
+    [Description("Adjust how much weight Dryer can hold. Default is 30 KG.")]
+    [Slider(0f, 500f, 501, NumberFormat = "{0:0.##} KG")]
+    public float ContainerDryerCapacity = 30;
 
     [Name("Washer")]
     [Description("Adjust how much weight Washer can hold. Default is 30 KG.")]
     [Slider(0f, 500f, 501, NumberFormat = "{0:0.##} KG")]
     public float ContainerWasherCapacity = 30;
 
-    [Name("Wood Desk Drawer")]
-    [Description("Adjust how much weight Wood Desk Drawer can hold. Default is 5 KG.")]
-    [Slider(0f, 50f, 51, NumberFormat = "{0:0.##} KG")]
-    public float ContainerWoodDeskDrawerCapacity = 5;
+    [Name("Coal Bin")]
+    [Description("Adjust how much weight Coal Bin can hold. Default is 60 KG.")]
+    [Slider(0f, 250f, 251, NumberFormat = "{0:0.##} KG")]
+    public float ContainerCoalBinCapacity = 60;
+
+    [Name("Firewood Bin")]
+    [Description("Adjust how much weight Firewood Bin can hold. Default is 30 KG.")]
+    [Slider(0f, 500f, 501, NumberFormat = "{0:0.##} KG")]
+    public float ContainerFirewoodBinCapacity = 30;
+
+    [Name("Supply Bin")]
+    [Description("Adjust how much weight Supply Bin can hold. Default is 30 KG.")]
+    [Slider(0f, 250f, 251, NumberFormat = "{0:0.##} KG")]
+    public float ContainerSupplyBinCapacity = 30;
 
     [Name("Workbench Drawer")]
     [Description("Adjust how much weight Workbench Drawer can hold. Default is 5 KG.")]
     [Slider(0f, 25f, 26, NumberFormat = "{0:0.##} KG")]
     public float ContainerWorkbenchDrawerCapacity = 5;
+
+    [Name("Metal Container")]
+    [Description("Adjust how much weight Metal Container can hold. Default is 15 KG.")]
+    [Slider(0f, 50f, 51, NumberFormat = "{0:0.##} KG")]
+    public float ContainerMetalContainerCapacity = 15;
+
+    [Name("Plastic Container")]
+    [Description("Adjust how much weight Plastic Container can hold. Default is 15 KG.")]
+    [Slider(0f, 30f, 31, NumberFormat = "{0:0.##} KG")]
+    public float ContainerPlasticContainerCapacity = 15;
+
+    [Name("First Aid Kit")]
+    [Description("Adjust how much weight First Aid Kit can hold. Default is 5 KG.")]
+    [Slider(0f, 25f, 26, NumberFormat = "{0:0.##} KG")]
+    public float ContainerFirstAidCapacity = 5;
+
+    [Name("Medicine Shelf")]
+    [Description("Adjust how much weight Medicine Shelf can hold. Default is 5 KG.")]
+    [Slider(0f, 25f, 26, NumberFormat = "{0:0.##} KG")]
+    public float ContainerMedicineShelfCapacity = 5;
+
+    [Name("Infirmary Drawer")]
+    [Description("Adjust how much weight Infirmary Drawer can hold. Default is 10 KG.")]
+    [Slider(0f, 50f, 51, NumberFormat = "{0:0.##} KG")]
+    public float ContainerInfirmaryDrawerCapacity = 10;
+
+    [Name("Locker")]
+    [Description("Adjust how much weight Locker can hold. Default is 30 KG.")]
+    [Slider(0f, 100f, 101, NumberFormat = "{0:0.##} KG")]
+    public float ContainerLockerCapacity = 30;
+
+    [Name("Safe")]
+    [Description("Adjust how much weight Safe can hold. Default is 10 KG.")]
+    [Slider(0f, 50f, 51, NumberFormat = "{0:0.##} KG")]
+    public float ContainerSafeCapacity = 10;
+
+    [Name("Safety Deposit Box")]
+    [Description("Adjust how much weight Safety Deposit Box can hold. Default is 5 KG.")]
+    [Slider(0f, 25f, 26, NumberFormat = "{0:0.##} KG")]
+    public float ContainerSafetyDepositBoxCapacity = 5;
+
+    [Name("Cash Register")]
+    [Description("Adjust how much weight Cash Register can hold. Default is 5 KG.")]
+    [Slider(0f, 25f, 26, NumberFormat = "{0:0.##} KG")]
+    public float ContainerCashRegisterCapacity = 5;
+
+    [Name("Gun Locker")]
+    [Description("Adjust how much weight Gun Locker can hold. Default is 30 KG.")]
+    [Slider(0f, 100f, 101, NumberFormat = "{0:0.##} KG")]
+    public float ContainerGunLockerCapacity = 30;
+
+    [Name("Lock Box")]
+    [Description("Adjust how much weight Lock Box can hold. Default is 10 KG.")]
+    [Slider(0f, 50f, 51, NumberFormat = "{0:0.##} KG")]
+    public float ContainerLockBoxCapacity = 10;
+
+    [Name("Backpack")]
+    [Description("Adjust how much weight Backpack can hold. Default is 15 KG.")]
+    [Slider(0f, 30f, 31, NumberFormat = "{0:0.##} KG")]
+    public float ContainerBackpackCapacity = 15;
+
+    [Name("Briefcase")]
+    [Description("Adjust how much weight Briefcase can hold. Default is 10 KG.")]
+    [Slider(0f, 30f, 31, NumberFormat = "{0:0.##} KG")]
+    public float ContainerBriefcaseCapacity = 10;
+   
+    [Name("Suitcase")]
+    [Description("Adjust how much weight Suitcase can hold. Default is 20 KG.")]
+    [Slider(0f, 50f, 51, NumberFormat = "{0:0.##} KG")]
+    public float ContainerSuitcaseCapacity = 20;
+
+    [Name("Cargo Container")]
+    [Description("Adjust how much weight Cargo Container can hold. Default is 30 KG.")]
+    [Slider(0f, 250f, 251, NumberFormat = "{0:0.##} KG")]
+    public float ContainerCargoContainerCapacity = 30;
+
+    [Name("Glove Box")]
+    [Description("Adjust how much weight Glove Box can hold. Default is 5 KG.")]
+    [Slider(0f, 25f, 26, NumberFormat = "{0:0.##} KG")]
+    public float ContainerGloveBoxCapacity = 5;
+
+    [Name("Hatch")]
+    [Description("Adjust how much weight Hatch can hold. Default is 40 KG.")]
+    [Slider(0f, 250f, 251, NumberFormat = "{0:0.##} KG")]
+    public float ContainerHatchCapacity = 40;
+
+    [Name("Hidden Cache")]
+    [Description("Adjust how much weight Hidden Cache can hold. Default is 15 KG.")]
+    [Slider(0f, 50f, 51, NumberFormat = "{0:0.##} KG")]
+    public float ContainerHiddenCacheCapacity = 15;
+
+    [Name("Rock Cache")]
+    [Description("Adjust how much weight Rock Cache can hold. Default is 30 KG.")]
+    [Slider(0f, 100f, 101, NumberFormat = "{0:0.##} KG")]
+    public float ContainerRockCacheCapacity = 30;
+
+    [Name("Trunk (Car)")]
+    [Description("Adjust how much weight Trunk (Car) can hold. Default is 40 KG.")]
+    [Slider(0f, 500f, 501, NumberFormat = "{0:0.##} KG")]
+    public float ContainerCarTrunkCapacity = 40;
+
+    //im here 
+
+    [Name("Wooden Vegetable Rack")]
+    [Description("Adjust how much weight each drawer of the Wooden Vegetable Rack can hold. Default is 10 KG.")]
+    [Slider(0f, 50f, 51, NumberFormat = "{0:0.##} KG")]
+    public float ContainerWoodenVegRackCapacity = 10;
+
+    [Name("Trunk (Rustic StorageBox)")]
+    [Description("Adjust how much weight the Rustic Storage Trunk can hold. Default is 35 KG.")]
+    [Slider(0f, 500f, 501, NumberFormat = "{0:0.##} KG")]
+    public float ContainerRusticStorageTrunkCapacity = 35;
+
+    [Name("Tall Rustic Closet - Large Door")]
+    [Description("Adjust how much weight the left bigger closet door can hold. Default is 25 KG.")]
+    [Slider(0f, 100f, 101, NumberFormat = "{0:0.##} KG")]
+    public float ContainerRusticClosetADoorTallLeftDoorCapacity = 25;
+    [Name("Tall Rustic Closet - Smaller Door")]
+    [Description("Adjust how much weight the right smaller closet door can hold. Default is 20 KG.")]
+    [Slider(0f, 100f, 101, NumberFormat = "{0:0.##} KG")]
+    public float ContainerRusticClosetADoorShortRightDoorCapacity = 20;
+    [Name("Tall Rustic Closet - 3 Small Drawers")]
+    [Description("Adjust how much weight the 3 small drawers can hold. Default is 6 KG.")]
+    [Slider(0f, 50f, 51, NumberFormat = "{0:0.##} KG")]
+    public float ContainerRusticClosetADrawerCapacity = 6;
+
+    [Name("Rustic Closet - 2 Doors")]
+    [Description("Adjust how much weight the 2 closet doors can hold. Default is 20 KG.")]
+    [Slider(0f, 100f, 101, NumberFormat = "{0:0.##} KG")]
+    public float ContainerRusticClosetBDoorTwoMediumDoorsCapacity = 20;
+    [Name("Rustic Closet - 4 Drawers")]
+    [Description("Adjust how much weight the 4 drawers can hold. Default is 10 KG.")]
+    [Slider(0f, 50f, 51, NumberFormat = "{0:0.##} KG")]
+    public float ContainerRusticClosetBDrawerCapacity = 10;
+
+    [Name("Rustic Cupboard - 1 Doored")]
+    [Description("Adjust how much weight the 1 doored closet can hold. Default is 20 KG.")]
+    [Slider(0f, 100f, 101, NumberFormat = "{0:0.##} KG")]
+    public float ContainerRusticCupboardCapacity = 20;
+
+    [Name("Rustic Display Shelf - 2 Drawer Capacity")]
+    [Description("Adjust how much weight the 2 drawers on the display shelf can hold. Default is 10 KG.")]
+    [Slider(0f, 50f, 51, NumberFormat = "{0:0.##} KG")]
+    public float ContainerDisplayShelfDrawerCapacity = 10;
+
+    [Name("Rustic Dresser - 3 drawers")]
+    [Description("Adjust how much weight the 3 drawers on the dresser can hold. Default is 10 KG.")]
+    [Slider(0f, 50f, 51, NumberFormat = "{0:0.##} KG")]
+    public float ContainerRusticDresserDrawerACapacity = 10;
+
+    [Name("Rustic Wide Dresser - 3 top drawers")]
+    [Description("Adjust how much weight the 3 drawers on the dresser can hold. Default is 6 KG.")]
+    [Slider(0f, 50f, 51, NumberFormat = "{0:0.##} KG")]
+    public float ContainerRusticWideDresserSmallDrawerCapacity = 6;
+    [Name("Rustic Wide Dresser - 4 large bottom drawers")]
+    [Description("Adjust how much weight the 4 large drawers on the dresser can hold. Default is 10 KG.")]
+    [Slider(0f, 50f, 51, NumberFormat = "{0:0.##} KG")]
+    public float ContainerRusticWideDresserLargeDrawerCapacity = 10;
+
+    [Name("Rustic End Table - 1 Drawer")]
+    [Description("Adjust how much weight the 1 drawer on the end table can hold. Default is 5 KG.")]
+    [Slider(0f, 50f, 51, NumberFormat = "{0:0.##} KG")]
+    public float ContainerRusticEndTableCapacity = 5;
 
     #endregion
 
@@ -534,7 +597,8 @@ internal class Settings : JsonModSettings
     [Description("Enables tweaks which alters items in a way that can be seen as 'cheating'.")]
     public bool CheatingTweaks = false;
 
-    [Name("Container Weight Tweaks")] [Description("Enables all tweaks related to modifying the containers weight.")]
+    [Name("Container Weight Tweaks")]
+    [Description("Enables all tweaks related to modifying the containers weight.")]
     public bool ContainerWeightTweaks = false;
 
     #endregion
@@ -704,6 +768,19 @@ internal class Settings : JsonModSettings
             SetFieldVisible(nameof(ContainerWasherCapacity), true);
             SetFieldVisible(nameof(ContainerWoodDeskDrawerCapacity), true);
             SetFieldVisible(nameof(ContainerWorkbenchDrawerCapacity), true);
+            SetFieldVisible(nameof(ContainerWoodenVegRackCapacity), true);
+            SetFieldVisible(nameof(ContainerRusticStorageTrunkCapacity), true);
+            SetFieldVisible(nameof(ContainerRusticClosetADoorTallLeftDoorCapacity), true);
+            SetFieldVisible(nameof(ContainerRusticClosetADoorShortRightDoorCapacity), true);
+            SetFieldVisible(nameof(ContainerRusticClosetADrawerCapacity), true);
+            SetFieldVisible(nameof(ContainerRusticClosetBDoorTwoMediumDoorsCapacity), true);
+            SetFieldVisible(nameof(ContainerRusticClosetBDrawerCapacity), true);
+            SetFieldVisible(nameof(ContainerRusticCupboardCapacity), true);
+            SetFieldVisible(nameof(ContainerDisplayShelfDrawerCapacity), true);
+            SetFieldVisible(nameof(ContainerRusticDresserDrawerACapacity), true);
+            SetFieldVisible(nameof(ContainerRusticWideDresserSmallDrawerCapacity), true);
+            SetFieldVisible(nameof(ContainerRusticWideDresserLargeDrawerCapacity), true);
+            SetFieldVisible(nameof(ContainerRusticEndTableCapacity), true);
         }
         else
         {
@@ -754,6 +831,19 @@ internal class Settings : JsonModSettings
             SetFieldVisible(nameof(ContainerWasherCapacity), false);
             SetFieldVisible(nameof(ContainerWoodDeskDrawerCapacity), false);
             SetFieldVisible(nameof(ContainerWorkbenchDrawerCapacity), false);
+            SetFieldVisible(nameof(ContainerWoodenVegRackCapacity), false);
+            SetFieldVisible(nameof(ContainerRusticStorageTrunkCapacity), false);
+            SetFieldVisible(nameof(ContainerRusticClosetADoorTallLeftDoorCapacity), false);
+            SetFieldVisible(nameof(ContainerRusticClosetADoorShortRightDoorCapacity), false);
+            SetFieldVisible(nameof(ContainerRusticClosetADrawerCapacity), false);
+            SetFieldVisible(nameof(ContainerRusticClosetBDoorTwoMediumDoorsCapacity), false);
+            SetFieldVisible(nameof(ContainerRusticClosetBDrawerCapacity), false);
+            SetFieldVisible(nameof(ContainerRusticCupboardCapacity), false);
+            SetFieldVisible(nameof(ContainerDisplayShelfDrawerCapacity), false);
+            SetFieldVisible(nameof(ContainerRusticDresserDrawerACapacity), false);
+            SetFieldVisible(nameof(ContainerRusticWideDresserSmallDrawerCapacity), false);
+            SetFieldVisible(nameof(ContainerRusticWideDresserLargeDrawerCapacity), false);
+            SetFieldVisible(nameof(ContainerRusticEndTableCapacity), false);
 
             SetFieldVisible(nameof(InfiniteContainerWeight), false);
         }
